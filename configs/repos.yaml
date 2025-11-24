@@ -1,0 +1,11 @@
+# List of repositories to process
+repos:
+  # - name: example-repo
+  #   url: https://github.com/username/example-repo.git
+  #   test_command: npm test
+
+  - name: test3
+    url: https://github.com/ayush-autonomize/test3.git
+    test_command: echo "No tests"
+
+    

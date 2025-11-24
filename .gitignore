@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv
+.venv/
+venv/
+
+# Pytest cache
+.pytest_cache/
+
+# OS files
+.DS_Store
+
+# Local env files
+.env
+
+# Temporary directories and reports
+temp_repos/
+*_trivy_report.json
+*_security_summary.md

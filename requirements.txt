@@ -1,0 +1,14 @@
+PyYAML==6.0.2          # to read repos.yaml and agent.yaml
+requests==2.31.0       # for GitHub API calls (PR creation, etc.)
+GitPython==3.1.43      # to clone repos + create branches
+docker==7.1.0          # to run docker build commands programmatically (optional)
+semver==3.0.2          # for version comparisons if needed
+pytest==8.3.2          # for writing tests for your agent
+python-dotenv==1.0.1   # for loading secrets/local env if needed
+tqdm==4.66.4           # nice progress bars during multi-repo runs
+
+
+pydantic==2.9.2        # validate config files
+colorama==0.4.6        # colored logs for terminal output
+
+

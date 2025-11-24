@@ -1,0 +1,18 @@
+{
+  "Results": [
+    {
+      "Target": "alpine:3.12",
+      "Type": "os",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-1234",
+          "PkgName": "musl",
+          "InstalledVersion": "1.1.24",
+          "FixedVersion": "1.1.25",
+          "Severity": "HIGH",
+          "Description": "Example vulnerability"
+        }
+      ]
+    }
+  ]
+}

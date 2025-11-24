@@ -1,0 +1,5 @@
+# Agent configuration
+scan:
+  enabled: true
+  trivy: true
+work_dir: /tmp/docker-security-agent
