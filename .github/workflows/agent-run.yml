@@ -3,7 +3,7 @@ name: Agent Run
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 8 * * *' # daily at 8:00 AM UTC
+    - cron: '0 9 * * *' # daily at 9:00 AM UTC
 
 jobs:
   run-agent:
