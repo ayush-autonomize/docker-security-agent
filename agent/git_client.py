@@ -50,7 +50,7 @@ class GitClient:
         """Create and checkout a new branch."""
         repo = git.Repo(repo_path)
         current = repo.active_branch
-        new_branch = repo.create_head(branch_name)
+        new_branch = repo.create_head(branch_name, force=True)
         new_branch.checkout()
         return new_branch
 
