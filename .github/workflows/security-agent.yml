@@ -2,7 +2,7 @@ name: Docker Security Agent
 
 on:
   schedule:
-    - cron: '0 0 * * 1' # Weekly on Mondays
+    - cron: '0 9 * * *' # daily at 9:00 AM UTC
   workflow_dispatch: # Manual trigger
 
 jobs:
