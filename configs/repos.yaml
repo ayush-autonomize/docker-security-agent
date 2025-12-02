@@ -4,8 +4,8 @@ repos:
   #   url: https://github.com/username/example-repo.git
   #   test_command: npm test
 
-  - name: test3
-    url: https://github.com/ayush-autonomize/test3.git
+  - name: test4
+    url: https://github.com/ayush-autonomize/test4.git
     test_command: echo "No tests"
 
     

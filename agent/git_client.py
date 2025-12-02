@@ -22,9 +22,16 @@ class GitClient:
             try:
                 repo = git.Repo(dest_path)
                 try:
+                    # Fetch latest changes
+                    repo.remotes.origin.fetch()
+                    # Reset to main (or detect default branch if needed, assuming main for now)
+                    # We force checkout main and reset to origin/main to discard any local drift/feature branches
+                    repo.git.checkout('main')
+                    repo.git.reset('--hard', 'origin/main')
+                    # Pull is technically redundant after reset --hard to origin/main, but ensures we are up to date
                     repo.remotes.origin.pull()
                 except git.exc.GitCommandError as e:
-                    print(f"Warning: Failed to pull {repo_url}: {e}. Using existing version.")
+                    print(f"Warning: Failed to update {repo_url}: {e}. Using existing version.")
                 return dest_path
             except git.exc.InvalidGitRepositoryError:
                 # Directory exists but not a git repo? 
